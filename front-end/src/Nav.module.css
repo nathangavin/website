@@ -1,0 +1,118 @@
+#Nav {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.point {
+    
+}
+
+#center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  height: 80vh;
+  width: 80vh;
+}
+
+#outer-orbit, #middle-orbit, #inner-orbit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+}
+
+/* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+#outer-orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px #4A437F dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 20s linear infinite;
+}
+
+/* ---------- Repeating styles for the outer orbiting circles ---------- */
+.outer-orbit-cirlces {
+  position: absolute;
+  top: -15px;
+  left: 135px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #00FFCA;
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  border: 1px #4A437F dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.middle-orbit-cirlces {
+  position: absolute;
+  top: -10px;
+  left: 105px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #4A437F;
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  border: 1px #4A437F dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.inner-orbit-cirlces {
+  position: absolute;
+  top: -5px;
+  left: 75px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: #9F98E6;
+}
+
+
+
+/* ---------- Animation ---------- */
+/*
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+*/
