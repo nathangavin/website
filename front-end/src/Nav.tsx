@@ -18,7 +18,7 @@ const Nav: Component = () => {
             <div id={styles['circle-orbit-container']}>
 
                 <div id={styles["inner-orbit"]}>
-                    <div></div>
+                    <div class={styles.orbit_line}></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -26,7 +26,7 @@ const Nav: Component = () => {
                 </div>
 
                 <div id={styles["middle-orbit"]}>
-                    <div></div>
+                    <div class={styles.orbit_line}></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -34,7 +34,7 @@ const Nav: Component = () => {
                 </div>
 
                 <div id={styles["outer-orbit"]}>
-                    <div></div>
+                    <div class={styles.orbit_line}></div>
                     <div></div>
                     <div></div>
                     <div></div>
